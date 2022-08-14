@@ -30,7 +30,7 @@ def index():
     return "Python Flask SparkPi server running. Add the 'sparkpi' route to this URL to invoke the app."
 
 
-@app.route("/sparkpi")
+@app.route("/sparkpi", methods=['GET'])
 def sparkpi():
     scale = int(request.args.get('scale', 2))
     pi = produce_pi(scale)
