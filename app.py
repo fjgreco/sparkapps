@@ -9,7 +9,8 @@ app = Flask(__name__)
 
 
 def produce_pi(scale):
-    #spark = SparkSession.builder.appName("PythonPi").getOrCreate()
+    '''
+    spark = SparkSession.builder.appName("PythonPi").getOrCreate()
     n = 100000 * scale
 
     def f(_):
@@ -18,12 +19,13 @@ def produce_pi(scale):
         y = random()
         return 1 if x ** 2 + y ** 2 <= 1 else 0
 
-    #count = spark.sparkContext.parallelize(
-    #    xrange(1, n + 1), scale).map(f).reduce(lambda x, y: x + y)
-    #park.stop()
+    count = spark.sparkContext.parallelize(
+        xrange(1, n + 1), scale).map(f).reduce(lambda x, y: x + y)
+    park.stop()
+    '''
 
-    count=xrange(1, n + 1), scale).map(f).reduce(lambda x, y: x + y)
-    pi = 4.0 * count / n
+    #pi = 4.0 * count / n
+    pi=3.14159
     return pi
 
 
