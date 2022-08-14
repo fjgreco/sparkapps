@@ -1,2 +1,2 @@
-Flask==0.12.1
-jinja2==3.0
+Flask
+jinja2
