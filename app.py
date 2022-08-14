@@ -1,7 +1,5 @@
 import os
 
-from jinja2.utils import markupsafe 
-import jinja
 from flask import Flask
 from flask import request
 from pyspark.sql import SparkSession
