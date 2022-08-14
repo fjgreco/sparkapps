@@ -1,5 +1,6 @@
 import os
 
+from markupsafe import Markup 
 from flask import Flask
 from flask import request
 from pyspark.sql import SparkSession
